@@ -1,19 +1,18 @@
 # Laravel-UUID
 
-[![Build Status](https://travis-ci.org/binarycabin/laravel-uuid.svg?branch=master)](https://travis-ci.org/binarycabin/laravel-uuid)
-[![StyleCI](https://github.styleci.io/repos/110678597/shield?branch=master)](https://github.styleci.io/repos/110678597)
-[![Latest Stable Version](http://img.shields.io/packagist/v/binarycabin/laravel-uuid.svg?style=flat)](https://packagist.org/packages/binarycabin/laravel-uuid)
-[![Total Downloads](http://img.shields.io/packagist/dt/binarycabin/laravel-uuid.svg?style=flat)](https://packagist.org/packages/binarycabin/laravel-uuid)
+[![Build Status](https://travis-ci.org/luminfire/laravel-uuid.svg?branch=master)](https://travis-ci.org/luminfire/laravel-uuid)
+[![Latest Stable Version](http://img.shields.io/packagist/v/luminfire/laravel-uuid.svg?style=flat)](https://packagist.org/packages/luminfire/laravel-uuid)
+[![Total Downloads](http://img.shields.io/packagist/dt/luminfire/laravel-uuid.svg?style=flat)](https://packagist.org/packages/luminfire/laravel-uuid)
 
-A wrapper for webpatser/laravel-uuid with additional integration
+A trait to add UUID integration, using Laravel’s native `Str:uuid()` functionality. Forked from [binarycabin/laravel-uuid](https://github.com/binarycabin/laravel-uuid), removing the `webpatser/laravel-uuid` dependency.
 
 ```bash
-composer require binarycabin/laravel-uuid
+composer require luminfire/laravel-uuid
 ```
 
 This package adds a very simple trait to automatically generate a UUID for your Models.
 
-Simply add the "\BinaryCabin\LaravelUUID\Traits\HasUUID;" trait to your model:
+Simply add the `\LuminFire\LaravelUUID\Traits\HasUUID;` trait to your model:
 
 ```php
 <?php
@@ -25,7 +24,7 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
 
-    use \BinaryCabin\LaravelUUID\Traits\HasUUID;
+    use \LuminFire\LaravelUUID\Traits\HasUUID;
 
 }
 ```

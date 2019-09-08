@@ -1,6 +1,6 @@
 <?php
 
-namespace BinaryCabin\Options\Tests;
+namespace LuminFire\Options\Tests;
 
 use PHPUnit\Framework\TestCase;
 

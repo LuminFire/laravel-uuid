@@ -1,6 +1,8 @@
 <?php
 
-namespace BinaryCabin\LaravelUUID\Traits;
+namespace LuminFire\LaravelUUID\Traits;
+
+use Illuminate\Support\Str;
 
 trait HasUUID
 {
@@ -25,7 +27,7 @@ trait HasUUID
 
     public static function generateUUID()
     {
-        return \Uuid::generate()->string;
+        return Str::uuid();
     }
 
     public function scopeByUUID($query, $uuid)

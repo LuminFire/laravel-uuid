@@ -1,26 +1,28 @@
 {
-    "name": "binarycabin/laravel-uuid",
-    "description": "A wrapper for webpatser/laravel-uuid with additional integration",
-    "keywords": ["laravel"],
+    "name": "luminfire/laravel-uuid",
+    "description": "A trait to generate UUIDs for models",
+    "version": "1.1.0",
+    "keywords": ["laravel", "uuid"],
     "type": "library",
-    "require": {
-        "webpatser/laravel-uuid": "2.*"
-    },
     "license": "MIT",
     "authors": [
         {
             "name": "Jeff Kilroy",
             "email": "jeff@binarycabin.com"
+        },
+        {
+            "name": "Andrew Minion",
+            "email": "andrew.minion@luminfire.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "BinaryCabin\\LaravelUUID\\": "src/"
+            "LuminFire\\LaravelUUID\\": "src/"
         }
     },
     "autoload-dev":{
         "psr-4": {
-            "BinaryCabin\\LaravelUUID\\Tests\\": "tests"
+            "LuminFire\\LaravelUUID\\Tests\\": "tests"
         }
     },
     "require-dev": {
